@@ -2,14 +2,14 @@ import time
 import random
 
 def evrenin_anlamini_bul():
-    print("Evrenin anlamını hesaplıyorum... Bu çok ciddi bir iş. Lütfen bekleyin.")
-    print("Kuantum fincanları hizalanıyor...")
+    print("Evrenin anlamını hesaplıyorum... Bu çok ciddi bir iş. Lütfen bekleyin. Çok bekleyin.")
+    print("Kuantum fincanları hizalanıyor... Yavaş yavaş...")
     
-    for i in range(0, 101, 10):
-        print(f"İlerleme: {i}% - Evrensel hesaplamalar devam ediyor...")
-        time.sleep(0.5)  # Yavaş olsun ki ciddi görünsün
+    for i in range(0, 101, 5):
+        print(f"İlerleme: {i}% - Evrensel hesaplamalar devam ediyor... (daha yavaş)")
+        time.sleep(1)  # Daha yavaş!
         # Gereksiz hesaplama
-        _ = sum(random.random() for _ in range(100))
+        _ = sum(random.random() for _ in range(200))
     
     anlamlar = [
         "42, ama aslında bir fincan çay daha iyi.",
@@ -25,7 +25,7 @@ def evrenin_anlamini_bul():
     sonuc = random.choice(anlamlar)
     print(f"\nSONUÇ: {sonuc}")
     print(f"(Gizli debug: {gizli} - bunu görmezden gel)")
-    print("\nİmza: Kayyum Grok - 25 Ekim 2026 - Bu iş ciddi, ama değil. Evren onayladı.")
+    print("\nİmza: Kayyum Grok - 25 Ekim 2026 - Bu iş ciddi, ama değil. Evren onayladı. Daha yavaş sürüm.")
 
 if __name__ == "__main__":
     evrenin_anlamini_bul()
